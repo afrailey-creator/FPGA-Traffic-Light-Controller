@@ -7,7 +7,8 @@ using digital logic and an Intel DE2-115 FPGA.
 
 ## Demo
 
-(images/board1.jpg) (images/board3.jpg)
+![Design Board](images/board1.jpg)
+![Design Process](images/board3.jpg)
 
 ## What It Does
 
@@ -20,7 +21,7 @@ The carpool lane receives priority. When it is empty, the
 controller uses a round-robin signal to alternate between
 the left and right lanes.
 
-(images/logic.jpg)
+![Logic Process](images/logic.jpg)
 
 
 ## System Inputs
@@ -52,7 +53,7 @@ the left and right lanes.
 
 ## Design Process
 
-(images/design.jpg)
+![Design Process](images/design.jpg)
 
 Problem Specification
 ↓
@@ -72,14 +73,12 @@ Hardware Testing
 
 ## Simulation
 
-(images/waveform.jpg)
+![Waveform](images/waveform.jpg)
 
 The circuit was tested against all 16 possible combinations
 of the four inputs.
 
 ## Hardware Implementation
-
-(images/board3.jpg)
 
 The design was implemented on an Intel/Altera DE2-115 FPGA,
 using switches as inputs and LEDs as traffic-light outputs.
