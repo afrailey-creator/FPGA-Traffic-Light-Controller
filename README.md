@@ -114,27 +114,3 @@ The Verilog implementation for the hexadecimal 7-segment decoder is included in 
 This project provided hands-on experience translating a functional specification into a working digital system.
 
 One of the most valuable parts of the project was comparing simulated behavior with the physical FPGA implementation. This reinforced the importance of verification, hardware configuration, and testing when moving from a logical design to a physical system.
-
-## Repository Structure
-
-```text
-FPGA-Traffic-Light-Controller/
-│
-├── code/
-│   └── bin_7seg.v
-│
-├── documentation/
-│   └── Lab3_Report.pdf
-│
-├── hardware/
-│   └── DE2_115.qsf
-│
-├── images/
-│   ├── 7seg.jpg
-│   ├── board1.jpg
-│   ├── board3.jpg
-│   ├── design.jpg
-│   ├── logic.jpg
-│   └── waveform.jpg
-│
-└── README.md
