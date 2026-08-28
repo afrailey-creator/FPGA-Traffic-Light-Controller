@@ -1,14 +1,11 @@
-#============================================================
-# Build by Altera University Program
-#============================================================
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
 
-#============================================================
-# CLOCK
-#============================================================
+
+#CLOCK
+
 set_location_assignment PIN_Y2 -to CLOCK_50
 set_location_assignment PIN_AG14 -to CLOCK2_50
 set_location_assignment PIN_AG15 -to CLOCK3_50
@@ -17,17 +14,17 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK2_50
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK3_50
 
 
-#============================================================
-# Sma
-#============================================================
+
+#Sma
+
 set_location_assignment PIN_AH14 -to SMA_CLKIN
 set_location_assignment PIN_AE23 -to SMA_CLKOUT
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SMA_CLKIN
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SMA_CLKOUT
 
-#============================================================
-# LED
-#============================================================
+
+#LED
+
 set_location_assignment PIN_E21 -to LEDG[0]
 set_location_assignment PIN_E22 -to LEDG[1]
 set_location_assignment PIN_E25 -to LEDG[2]
@@ -83,9 +80,9 @@ set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[15]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[16]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[17]
 
-#============================================================
-# KEY
-#============================================================
+
+#KEY
+
 set_location_assignment PIN_M23 -to KEY[0]
 set_location_assignment PIN_M21 -to KEY[1]
 set_location_assignment PIN_N21 -to KEY[2]
@@ -95,9 +92,9 @@ set_instance_assignment -name IO_STANDARD "2.5 V" -to KEY[1]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to KEY[2]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to KEY[3]
 
-#============================================================
-# SW
-#============================================================
+
+#SW
+
 set_location_assignment PIN_AB28 -to SW[0]
 set_location_assignment PIN_AC28 -to SW[1]
 set_location_assignment PIN_AC27 -to SW[2]
@@ -135,9 +132,9 @@ set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[15]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[16]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[17]
 
-#============================================================
-# SEG7
-#============================================================
+
+#SEG7
+
 set_location_assignment PIN_G18 -to HEX0[0]
 set_location_assignment PIN_F22 -to HEX0[1]
 set_location_assignment PIN_E17 -to HEX0[2]
@@ -251,9 +248,9 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX7[4]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX7[5]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX7[6]
 
-#============================================================
-# LCD
-#============================================================
+
+#LCD
+
 set_location_assignment PIN_L6 -to LCD_BLON
 set_location_assignment PIN_M5 -to LCD_DATA[7]
 set_location_assignment PIN_M3 -to LCD_DATA[6]
@@ -281,9 +278,9 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_EN
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_RS
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_ON
 
-#============================================================
-# RS232
-#============================================================
+
+#RS232
+
 set_location_assignment PIN_G9 -to UART_TXD
 set_location_assignment PIN_G12 -to UART_RXD
 set_location_assignment PIN_G14 -to UART_CTS
@@ -293,9 +290,9 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to UART_RXD
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to UART_CTS
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to UART_RTS
 
-#============================================================
-# PS2
-#============================================================
+
+#PS2
+
 set_location_assignment PIN_G6 -to PS2_KBCLK
 set_location_assignment PIN_H5 -to PS2_KBDAT
 set_location_assignment PIN_G5 -to PS2_MSCLK
@@ -305,9 +302,9 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PS2_KBDAT
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PS2_MSCLK
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PS2_MSDAT
 
-#============================================================
-# SDCARD
-#============================================================
+
+#SDCARD
+
 set_location_assignment PIN_AE14 -to SD_DAT[0]
 set_location_assignment PIN_AF13 -to SD_DAT[1]
 set_location_assignment PIN_AB14 -to SD_DAT[2]
@@ -323,9 +320,9 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SD_DAT[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SD_DAT[2]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SD_DAT[3]
 
-#============================================================
-# VGA
-#============================================================
+
+#VGA
+
 set_location_assignment PIN_D12 -to VGA_B[7]
 set_location_assignment PIN_D11 -to VGA_B[6]
 set_location_assignment PIN_C12 -to VGA_B[5]
@@ -385,9 +382,9 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[5]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[6]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[7]
 
-#============================================================
-# Audio
-#============================================================
+
+#Audio
+
 set_location_assignment PIN_D1 -to AUD_DACDAT
 set_location_assignment PIN_E3 -to AUD_DACLRCK
 set_location_assignment PIN_D2 -to AUD_ADCDAT
@@ -401,25 +398,25 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_DACDAT
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_XCK
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_BCLK
 
-#============================================================
-# I2C for EEPROM
-#============================================================
+
+#I2C for EEPROM
+
 set_location_assignment PIN_D14 -to EEP_I2C_SCLK
 set_location_assignment PIN_E14 -to EEP_I2C_SDAT
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EEP_I2C_SCLK
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EEP_I2C_SDAT
 
-#============================================================
-# I2C for Audioand Tv-Decode 1 and 2
-#============================================================
+
+#I2C for Audioand Tv-Decode 1 and 2
+
 set_location_assignment PIN_B7 -to I2C_SCLK
 set_location_assignment PIN_A8 -to I2C_SDAT
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to I2C_SCLK
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to I2C_SDAT
 
-#============================================================
-# Ethernet 0
-#============================================================
+
+#Ethernet 0
+
 set_location_assignment PIN_A17 -to NET0_GTX_CLK
 set_location_assignment PIN_A21 -to NET0_INT_N
 set_location_assignment PIN_C20 -to NET0_MDC
@@ -461,9 +458,9 @@ set_instance_assignment -name IO_STANDARD "2.5 V" -to NET0_TX_CLK
 set_instance_assignment -name IO_STANDARD "2.5 V" -to NET0_MDC
 set_instance_assignment -name IO_STANDARD "2.5 V" -to NET0_MDIO
 
-#============================================================
-# Ethernet 1
-#============================================================
+
+#Ethernet 1
+
 set_location_assignment PIN_C23 -to NET1_GTX_CLK
 set_location_assignment PIN_D24 -to NET1_INT_N
 set_location_assignment PIN_D23 -to NET1_MDC
@@ -511,9 +508,9 @@ set_location_assignment PIN_C14 -to NET0_LINK100
 set_location_assignment PIN_D13 -to NET1_LINK100
 set_location_assignment PIN_A14 -to NETCLK_25
 
-#============================================================
-# TV Decoder
-#============================================================
+
+#TV Decoder
+
 set_location_assignment PIN_F7 -to TD_DATA[7]
 set_location_assignment PIN_E7 -to TD_DATA[6]
 set_location_assignment PIN_D6 -to TD_DATA[5]
@@ -539,9 +536,9 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TD_DATA[5]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TD_DATA[6]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TD_DATA[7]
 
-#============================================================
-# USB 
-#============================================================
+
+#USB 
+
 set_location_assignment PIN_D4 -to OTG_DACK_N[1]
 set_location_assignment PIN_C4 -to OTG_DACK_N[0]
 set_location_assignment PIN_A3 -to OTG_CS_N
@@ -603,15 +600,15 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_DACK_N[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_FSPEED
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to OTG_LSPEED
 
-#============================================================
-# IR Receiver
-#============================================================
+
+#IR Receiver
+
 set_location_assignment PIN_Y15 -to IRDA_RXD
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IRDA_RXD
 
-#============================================================
-# SDRAM
-#============================================================
+
+#SDRAM
+
 set_location_assignment PIN_AE5 -to DRAM_CLK
 set_location_assignment PIN_U1 -to DRAM_DQ[31]
 set_location_assignment PIN_U4 -to DRAM_DQ[30]
@@ -727,9 +724,9 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[10]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[11]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[12]
 
-#============================================================
-# SRAM
-#============================================================
+
+#SRAM
+
 set_location_assignment PIN_AG3 -to SRAM_DQ[15]
 set_location_assignment PIN_AF3 -to SRAM_DQ[14]
 set_location_assignment PIN_AE4 -to SRAM_DQ[13]
@@ -813,9 +810,9 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_CE_N
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_OE_N
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SRAM_WE_N
 
-#============================================================
-# Flash
-#============================================================
+
+#Flash
+
 set_location_assignment PIN_AF12 -to FL_DQ[7]
 set_location_assignment PIN_AH11 -to FL_DQ[6]
 set_location_assignment PIN_AG11 -to FL_DQ[5]
@@ -891,9 +888,9 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_RY
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_WE_N
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FL_WP_N
 
-#============================================================
-# GPIO, GPIO connect to GPIO Default
-#============================================================
+
+#GPIO, GPIO connect to GPIO Default
+
 set_location_assignment PIN_AB22 -to GPIO[0]
 set_location_assignment PIN_AC15 -to GPIO[1]
 set_location_assignment PIN_AB21 -to GPIO[2]
@@ -967,9 +964,9 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[33]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[34]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO[35]
 
-#============================================================
-# HSMC, HSMC connect to HSMC Default
-#============================================================
+
+#HSMC, HSMC connect to HSMC Default
+
 set_location_assignment PIN_J27 -to HSMC_CLKIN_P1
 set_location_assignment PIN_J28 -to HSMC_CLKIN_N1
 set_location_assignment PIN_Y27 -to HSMC_CLKIN_P2
@@ -1082,9 +1079,9 @@ set_instance_assignment -name IO_STANDARD LVDS -to HSMC_RX_D_N[16]
 set_instance_assignment -name IO_STANDARD LVDS -to HSMC_CLKOUT_P2
 set_instance_assignment -name IO_STANDARD LVDS -to HSMC_CLKOUT_N2
 
-#============================================================
-# HSMC, HSMC connect to HSMC Default
-#============================================================
+
+#HSMC, HSMC connect to HSMC Default
+
 set_location_assignment PIN_J10 -to EXT_IO[0]
 set_location_assignment PIN_J14 -to EXT_IO[1]
 set_location_assignment PIN_H13 -to EXT_IO[2]
@@ -1100,9 +1097,7 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EXT_IO[4]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EXT_IO[5]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EXT_IO[6]
 
-#============================================================
-# End of pin assignments by Altera University Program
-#============================================================
+
 
 
 
